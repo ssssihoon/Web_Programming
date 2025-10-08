@@ -1,0 +1,39 @@
+    h2{
+      color : brown;
+    }
+
+    span{
+      color : rgb(201, 26, 26);
+      background-color: bisque;
+    }
+
+    footer {
+      background-color: lightgray;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 5px
+    }
+
+    a:link {
+      color: rgb(100, 121, 6);
+    }
+
+    a:visited {
+      color: purple;
+    }
+
+    a:hover {
+      color: rgb(136, 255, 0);
+      text-decoration:dotted;
+    }
+
+    #id1 {color : blue}
+    p.color1 {color :blueviolet}
+    .color1 {background-color :rgb(193, 183, 202)}
+
+    a { text-decoration-line: underline;}
+    /* a[target="_blank"] {color: gray;} */
+
+    div > h2 {color: rgb(100, 25, 25);}
+    div h2 {font-family: Arial;}
+
