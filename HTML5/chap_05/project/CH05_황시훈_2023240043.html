@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- 자신이 웹페이지의 제목을 넣어시오 -->
+  <title> 여행을 떠나요 </title>
+  <!-- 웹 페이지 상단에 자신의 이름과 학번을 꼭 넣어야 함 -->
+   <h3>Project 5장: 이름: 황시훈 학번: 2023240043</h3>
+
+  <style>
+    h2 {color : darkolivegreen;
+        text-shadow: 5px 5px 9px gray, 0 0 15px red;}
+
+    span {
+      color : rgb(180, 40, 40); background-color : rgb(204, 224, 17);
+    }
+
+    footer {
+      background-color : rgb(142, 192, 150); padding : 18px; 
+      border-radius : 10px; 
+      margin : 8px;
+    }
+
+    a1:hover {
+      visibility: visible; 
+    }
+    
+    #point1 {color : darkblue;}
+
+    p.highlight {color : mediumvioletred;}
+
+    .bgbox {background-color : rgb(210, 200, 230);}
+
+    a {text-decoration-line : overline;}
+
+    div{
+      margin: auto;
+      width: 600px;
+      display: flex;
+      
+    }
+
+    div > h2 {color : rgb(100, 90, 30);}
+
+    div h2 {font-family : "Times New Roman", serif;}
+
+    img{
+      border: 3px solid green;
+      opacity: 0.99;
+    }
+
+    .left_img{
+      position:relative;
+      left: 5px; 
+    }
+
+    .right_img{
+      position:relative;
+      right: 1px;
+    }
+
+    .up_img{
+      position:relative;
+      top: 5px;
+    }
+
+    .down_img{
+      position:relative;
+      nav-down: 7px;
+    }
+
+    ul{
+      font-size: 20px;
+      background-color: beige;
+      padding: 5px;
+      margin: 5px;
+    }
+
+    .list-bar li {
+      display: inline-block;
+      margin-right: 30px;
+    }
+
+    table{
+      border-collapse:collapse;
+    }
+    td, th{
+      border: 1px solid;
+    }
+
+    .tr1:hover{
+      transition: 1s;
+      text-shadow: 7px 7px 8px #57c;
+    }
+
+    @keyframes shift{
+      0%, 100% {transform: translateX(5px);}
+      50% {transform: translateX(400px);}
+    }
+
+    @keyframes rotateX{
+      0% { transform: rotateX(0);}
+      100% { transform: rotateX(360deg);}
+    }
+    
+  </style>
+</head>
+
+<header>
+  <h1 class="tr1">이탈리아 여행을 가보고 싶은 이유</h1>
+
+  <img src="../media/italy.jpg" style="padding : 5px;" alt="이탈리아 국기" height="60" width="100">
+  <img src="../../font/font_i.png" class = "left_img" alt="i" height="60" width="40" style="animation: shift 2s;">
+  <img src="../../font/font_t.png" class = "left_img" alt="t" height="60" width="40" style="animation: shift 3s;">
+  <img src="../../font/font_a.png" class = "right_img" alt="a" height="60" width="40" style="animation: shift 4s;">
+  <img src="../../font/font_l.png" class = "up_img" alt="l" height="60" width="40" style="animation: shift 5s;">
+  <img src="../../font/font_y.png" class = "down_img" alt="y" height="60" width="40" style="animation: shift 6s;">
+  <img src="../media/italy.jpg" style="padding : 5px;" alt="이탈리아 국기" height="60" width="100">
+</header>
+
+<body>
+  <section>
+    <article>
+      <h2>이탈리아의 역사와 관광 명소</h2>
+      <p>이탈리아는 고대 로마 제국의 중심지로, 수천 년의 역사와 예술이 공존하는 나라입니다. 로마의 콜로세움과 포로 로마노는 당시 제국의 위엄을 지금도 느낄 수 있게 해줍니다.</p>
+      <p>피렌체는 르네상스의 발상지로, 미켈란젤로와 다빈치 같은 예술가들의 발자취가 남아 있습니다. 또한 베네치아의 수상 도시 풍경, 아말피 해안의 절벽 마을, 그리고 카프리 섬의 푸른 동굴은 자연과 인간이 조화롭게 만들어낸 명소들입니다.</p>
+      <p>이처럼 이탈리아의 도시는 각각 고유한 매력을 지니고 있어, 여행자는 한 나라 안에서 여러 시대를 여행하는 듯한 기분을 느낄 수 있습니다.</p>
+      <div style="position: relative; height: 200px;">
+        <img src="../media/italy1.jpg" style="position: absolute; left: 100px; z-index:10; animation : rotateX 5s infinite;" alt="이탈리아 명소1" height="150" width="220">
+        <img src="../media/italy2.jpg" style="position: absolute; left: 150px; z-index:20;" alt="이탈리아 명소2" height="150" width="220">
+        <img src="../media/italy3.jpg" style="position: absolute; left: 300px; z-index:50;" alt="이탈리아 명소3" height="150" width="220">
+        <img src="../media/italy4.jpg" style="position: absolute; left: 450px; z-index:40;" alt="이탈리아 명소4" height="150" width="220">
+        <img src="../media/italy5.jpg" style="position: absolute; left: 500px; z-index:30; animation : rotateX 5s infinite;" alt="이탈리아 명소5" height="150" width="220" >
+      </div>
+    </article>
+  </section>
+
+  <section>
+    <article>
+      <h2>이탈리아 사람</h2>
+      <p>이탈리아 사람들은 여유롭고 감정 표현이 풍부합니다. 그들은 하루 중 짧은 에스프레소 한 잔에도 행복을 느끼며, 가족과 친구와의 시간을 소중히 여깁니다.</p>
+      <p>"La Dolce Vita"라는 말처럼 인생의 달콤함을 일상의 소소한 순간에서 찾는 그들의 태도는 많은 이들에게 인상 깊은 문화로 남습니다.</p>
+    </article>
+  </section>
+
+  <section>
+    <article>
+      <h2>이탈리아 주변 국가</h2>
+      <ul class="list-bar">
+        <li><b>프랑스</b></li>
+        <li><b>스위스</b></li>
+        <li><b>오스트리아</b></li>
+        <li><b>슬로베니아</b></li>
+      </ul>
+      <p>이탈리아는 남유럽에 위치하며, 북쪽으로 프랑스, 스위스, 오스트리아, 슬로베니아와 국경을 접하고 있습니다.</p>
+      <p>그렇기 때문에, 이탈리아는 다양한 유럽 문화의 영향을 받아 독특하고 풍부한 문화를 형성했습니다.</p>
+    </article>
+  </section>
+
+  <section>
+    <article>
+      <h2>이탈리아의 음식</h2>
+      <p class = "highlight">이탈리아는 세계적인 미식의 나라입니다. </p>
+      <img src="../../chap_04/media/pizza2.png" alt="피자" height="25" width="25"><span>피자</span>는 나폴리에서 시작되어 단순하지만 신선한 재료로 만들어집니다. 바삭하면서도 쫄깃한 도우와 신선한 토마토소스가 특징입니다.
+      <p><span>파스타</span>는 지역마다 다양한 종류와 소스를 가지고 있으며, 알 덴테 식감으로 유명합니다. 간단한 재료로도 풍부한 맛을 낼 수 있는 것이 이탈리아 요리의 특징입니다.</p>
+      <p><span>젤라또</span>는 부드럽고 진한 맛으로, 일반 아이스크림보다 공기 함량이 적어 맛이 더욱 농축되어 있습니다.</p>
+      <p>또한 <span>에스프레소</span>는 이탈리아인의 일상에서 빼놓을 수 없는 음료입니다. 짧고 강렬한 한 잔의 커피는 이탈리아인의 에너지와 여유를 동시에 느끼게 해줍니다.</p>
+      <img src="../../chap_04/media/coffee_hot.png" alt="에스프레소" height="110" width="85">
+
+    </article>
+  </section>
+
+  <section>
+    <article>
+      <h2>패션의 나라</h2>
+      <p>이탈리아는 전 세계 패션의 중심지 중 하나로, <span>밀라노</span> 패션위크는 세계 4대 패션쇼 중 하나입니다. 구찌, 프라다, 돌체앤가바나 등 유명 브랜드들은 이탈리아의 장인 정신과 예술적 감각을 전 세계에 보여줍니다.</p>
+      <p>패션이 단순한 옷차림이 아니라, 삶의 태도와 문화로 이어진다는 점이 이탈리아를 더욱 특별하게 만듭니다.</p>
+    </article>
+  </section>
+
+  <section>
+    <article>
+      <h2>자동차</h2>
+      <p>이탈리아는 자동차 문화에서도 독보적입니다. <span>페라리</span>, <span>람보르기니</span>, <span>마세라티</span> 등 세계적으로 유명한 브랜드들은 성능뿐만 아니라 디자인에서도 예술적 완성도를 보여줍니다.</p>
+      <p>이탈리아의 자동차는 단순한 이동 수단이 아니라, 열정과 기술, 미학이 결합된 하나의 예술 작품이라 할 수 있습니다.</p>
+    </article>
+  </section>
+
+  <section>
+    <article>
+      <h2>스포츠</h2>
+      <p>이탈리아는 스포츠, 특히 <span>축구</span>에 대한 열정이 대단합니다. 세리에 A 리그에는 유벤투스, AC 밀란, 인터밀란 등 세계적인 명문 구단들이 있습니다.</p>
+      <br>
+      <div style="overflow: scroll; box-shadow: 10px 10px 5px rgb(85, 204, 168);">
+        <p>또한 F1과 같은 모터스포츠에서도 이탈리아 팀과 선수들이 오랜 전통과 명성을 이어오고 있습니다.</p>
+      </div>
+    </article>
+  </section>
+
+  <footer>
+    <br>
+    <p style="font-size: 120%;">결론적으로, 이탈리아는 역사와 예술, 음식과 패션, 그리고 사람들의 여유로운 삶의 방식이 있는 나라입니다. 저는 이러한 다양한 매력을 직접 보고 느껴보기 위해 꼭 한 번 이탈리아를 여행해보고 싶습니다.</p>
+    <h3>이탈리아 한눈에 보기</h3>
+    <table style="text-align: center; border-collapse: collapse; background-color: rgb(240, 240, 220);">
+      <tr>
+        <th></th>
+        <th>내용</th>
+      </tr>
+      <tr>
+        <td>음식</td>
+        <td>피자, 파스타, 에스프레소</td>
+      </tr>
+      <tr>
+        <td>명소</td>
+        <td>로마, 베네치아, 피렌체</td>
+      </tr>
+      <tr>
+        <td>패션</td>
+        <td>구찌, 프라다</td>
+      </tr>
+      <tr>
+        <td>자동차</td>
+        <td>페라리, 람보르기니</td>
+      </tr>
+    </table>
+  </footer>
+</body>
+</html>
